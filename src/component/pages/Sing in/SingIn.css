@@ -1,0 +1,25 @@
+.sing-in-page{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(194, 193, 193);
+    width: 40vw;
+    margin-left: 30vw;
+}
+.sing_in_label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: large;
+}
+/* .sing-in-page-inner{
+    position: relative;
+    padding: 32px;
+    width: 100%;
+    max-width: 640px;
+}
+.sing-in-page .close-btn{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+} */

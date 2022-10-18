@@ -295,12 +295,44 @@ export default function Header(){
             <Stack spacing={2} direction="row">
       <Button variant="contained"><Link to="/">Home</Link> </Button>
       <Button variant="contained"><Link to="Sing In">Sing In</Link> </Button>
+      <Button variant="contained"><Link to="Join">Join</Link> </Button>
       <Button variant="contained"><Link to="Ethiopian Women">Ethiopian Women</Link> </Button>
+      <Button variant="contained"><Link to="Ethiopian Men">Ethiopian Men</Link> </Button>
     </Stack>
             <h1>Header</h1>
-            {/* <Link to="/">Home</Link>   
-            <Link to="Sing In">Sing In</Link>   
-            <Link to="Ethiopian Women">Ethiopian Women</Link>  */}
         </div>
     )
 }
+
+// import React from "react";
+// import TextField from '@mui/material/TextField';
+// import Autocomplete from '@mui/material/Autocomplete';
+// import {Link} from 'react-router-dom'
+// // import Stack from '@mui/material/Stack';
+// import Button from '@mui/material/Button';
+// export default function Header(){
+   
+//     return(
+//         <div>
+//             <Autocomplete
+//       disablePortal
+//       id="combo-box-demo"
+//       options={top100Films}
+//       sx={{ width: 300 }}
+//       renderInput={(params) => <TextField {...params} label="Movie" />}
+//     />
+  
+         
+   
+//             <h1>Header</h1>
+          
+//         </div>
+//     )
+// }
+// const top100Films = [
+//     <Button variant="contained"><Link to="/">Home</Link> </Button>,
+//     <Button variant="contained"><Link to="Sing In">Sing In</Link> </Button>,
+//     <Button variant="contained"><Link to="Ethiopian Women">Ethiopian Women</Link> </Button>,
+//     <Button variant="contained"><Link to="Ethiopian Men">Ethiopian Men</Link> </Button>
+    
+//   ];

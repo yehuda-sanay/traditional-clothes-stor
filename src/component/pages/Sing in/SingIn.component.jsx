@@ -1,66 +1,33 @@
+import "./SingIn.css";
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import { grey } from "@mui/material/colors";
 
 export default function SingIn() {
   return (
+  <div className="sing-in-page">
+    
     <Box
-      component="form"
-      sx={{
-        '& .MuiTextField-root': { m: 1, width: '25ch' },
+      sx={{m: 20,
+        width: 500,
+        maxWidth: '100%',
+        bgcolor:grey,
       }}
-      noValidate
-      autoComplete="off"
     >
-      <div>
-        <TextField
-          error
-          id="outlined-error"
-          label="Error"
-          defaultValue="Hello World"
-        />
-        <TextField
-          error
-          id="outlined-error-helper-text"
-          label="Error"
-          defaultValue="Hello World"
-          helperText="Incorrect entry."
-        />
-      </div>
-      <div>
-        <TextField
-          error
-          id="filled-error"
-          label="Error"
-          defaultValue="Hello World"
-          variant="filled"
-        />
-        <TextField
-          error
-          id="filled-error-helper-text"
-          label="Error"
-          defaultValue="Hello World"
-          helperText="Incorrect entry."
-          variant="filled"
-        />
-      </div>
-      <div>
-        <TextField
-          error
-          id="standard-error"
-          label="Error"
-          defaultValue="Hello World"
-          variant="standard"
-        />
-        <TextField
-          error
-          id="standard-error-helper-text"
-          label="Error"
-          defaultValue="Hello World"
-          helperText="Incorrect entry."
-          variant="standard"
-        />
-      </div>
+       <Stack spacing={4} direction="column ">
+      <label class="sing_in_label" htmlFor="">Email Address</label>
+      <TextField fullWidth label="" id="Email_Address_sing_in" />
+      <br/>
+      <label class="sing_in_label" htmlFor="">Password</label>
+      <TextField fullWidth label="" id="Password_sing_in" />
+      <br />
+      <Button variant="contained">Contained</Button>
+      </Stack>
     </Box>
+    </div>
+    
   );
 }

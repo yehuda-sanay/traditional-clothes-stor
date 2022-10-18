@@ -6,30 +6,30 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function AllCards({ethiopianWomenDress}) {
-  const {author,country,language,link,pages,title,year}=ethiopianWomenDress
+export default function AllCards({ethiopian}) {
+  const {name,details,size,price,pic}=ethiopian
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         height="140"
-        image="https://www.cityofboise.org/media/14754/shutterstock_523462210.jpg?width=1200&mode=max&upscale=false"
+        image={pic}
         alt="book"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {title} - {author}
+          {/* {title} - {author} */}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          country: {country} <br/>
-          language: {language} <br/>
-          pages: {pages} <br/>
-          year: {year}
+          name: {name} <br/>
+          details: {details} <br/>
+          size: {size} <br/>
+          price: {price}$
         </Typography>
       </CardContent>
       <CardActions>
         <Button className="btn_card" size="small" >
-          <a className="link_card" href={link} target="_blank" rel="noopener noreferrer">read</a>
+          {/* <a className="link_card" href={link} target="_blank" rel="noopener noreferrer">read</a> */}
         </Button>
       </CardActions>
     </Card>
