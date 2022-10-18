@@ -35,3 +35,13 @@ export default function AllCards({ethiopian}) {
     </Card>
   );
 }
+
+  // const {id,name,details,size,price,pic}=ethiopian
+  // return (
+  //   <div className="horticulture-card">
+  //     <h1>ethiopian-card</h1>
+  //     <img id="card_img" src={ethiopian.pic} alt="" />
+  //     <h2>first name:{ethiopian.name}</h2>
+  //     <h2>last name:{ethiopian.details}</h2>
+  //     <h3>number:{ethiopian.size}</h3>
+  //   </div>

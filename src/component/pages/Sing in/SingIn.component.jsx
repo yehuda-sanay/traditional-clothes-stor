@@ -5,8 +5,16 @@ import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { grey } from "@mui/material/colors";
+import {UsersContext} from '../../../contexts/UserProvaider'
+import { useContext } from "react";
 
 export default function SingIn() {
+  console.log(UsersContext);
+  const {users,setUsers}=useContext(UsersContext)
+  console.log("sum")
+  
+
+  
   return (
   <div className="sing-in-page">
     

@@ -7,6 +7,7 @@ export default function EthiopianMenProvaider({children}){
     const [ethiopianMen, setEthiopianMen]=useState([]);
     useEffect(()=>{
         getEhtiopianMenApi().then(res=>setEthiopianMen(res))
+        
     },[])
 
     return(
