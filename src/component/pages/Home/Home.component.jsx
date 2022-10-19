@@ -2,9 +2,9 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function Home() {
   return (
-    <Carousel>
+    <Carousel style={{ width: '86rem',height:'31rem' }}>
       <Carousel.Item interval={1000}>
-        <img
+        <img style={{ width: '15rem',height:'30rem' }}
           className="d-block w-100"
           src="https://www.choctawnation.com/wp-content/uploads/2022/03/traditional-dress-1296x729.jpg"
           alt="First slide"
@@ -14,9 +14,9 @@ function Home() {
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={500}>
+      <Carousel.Item interval={1000}>
         <img
-          className="d-block w-100"
+          className="d-block w-100" style={{ width: '15rem',height:'30rem' }}
           src="https://habeshakemise.com/wp-content/uploads/2019/06/cropped-Capture-1.jpg"
           alt="Second slide"
         />
@@ -25,10 +25,9 @@ function Home() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
-        <img width={1345}
-        height={550}
-          className="d-block w-100"
+      <Carousel.Item interval={1000}>
+        <img 
+          className="d-block w-100" style={{ width: '30rem',height:'30rem' }}
           src="https://fashionablyemployed.com/wp-content/uploads/2021/04/Paste-21-780x491.png"
           alt="Third slide"
         />

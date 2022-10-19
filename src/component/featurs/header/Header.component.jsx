@@ -18,7 +18,6 @@
 // import Button from '@mui/material/Button';
 // import {Link} from 'react-router-dom'
 
-
 // const Search = styled('div')(({ theme }) => ({
 //   position: 'relative',
 //   borderRadius: theme.shape.borderRadius,
@@ -210,7 +209,7 @@
 //             {pages.map((page) => (
 //               <Button
 //                 key={page}
-                
+
 //                 sx={{ my: 2, color: 'white', display: 'block' }}
 //               >
 //                 <Link to={linkTo}>{page}</Link>
@@ -275,34 +274,25 @@
 //   );
 // }
 
+// import React from "react";
+// import {Link} from 'react-router-dom'
+// import Stack from '@mui/material/Stack';
+// import Button from '@mui/material/Button';
+// export default function Header(){
 
-
-
-
-
-
-
-
-
-import React from "react";
-import {Link} from 'react-router-dom'
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
-export default function Header(){
-
-    return(
-        <div>
-            <Stack spacing={2} direction="row">
-      <Button variant="contained"><Link to="/">Home</Link> </Button>
-      <Button variant="contained"><Link to="Sing In">Sing In</Link> </Button>
-      <Button variant="contained"><Link to="Join">Join</Link> </Button>
-      <Button variant="contained"><Link to="EthiopianWomen">Ethiopian Women</Link> </Button>
-      <Button variant="contained"><Link to="EthiopianMen">Ethiopian Men</Link> </Button>
-    </Stack>
-            <h1>Header</h1>
-        </div>
-    )
-}
+//     return(
+//         <div>
+//             <Stack spacing={2} direction="row">
+//       <Button variant="contained"><Link to="/">Home</Link> </Button>
+//       <Button variant="contained"><Link to="Sing In">Sing In</Link> </Button>
+//       <Button variant="contained"><Link to="Join">Join</Link> </Button>
+//       <Button variant="contained"><Link to="EthiopianWomen">Ethiopian Women</Link> </Button>
+//       <Button variant="contained"><Link to="EthiopianMen">Ethiopian Men</Link> </Button>
+//     </Stack>
+//             <h1>Header</h1>
+//         </div>
+//     )
+// }
 
 // import React from "react";
 // import TextField from '@mui/material/TextField';
@@ -311,7 +301,7 @@ export default function Header(){
 // // import Stack from '@mui/material/Stack';
 // import Button from '@mui/material/Button';
 // export default function Header(){
-   
+
 //     return(
 //         <div>
 //             <Autocomplete
@@ -321,11 +311,9 @@ export default function Header(){
 //       sx={{ width: 300 }}
 //       renderInput={(params) => <TextField {...params} label="Movie" />}
 //     />
-  
-         
-   
+
 //             <h1>Header</h1>
-          
+
 //         </div>
 //     )
 // }
@@ -334,5 +322,92 @@ export default function Header(){
 //     <Button variant="contained"><Link to="Sing In">Sing In</Link> </Button>,
 //     <Button variant="contained"><Link to="Ethiopian Women">Ethiopian Women</Link> </Button>,
 //     <Button variant="contained"><Link to="Ethiopian Men">Ethiopian Men</Link> </Button>
-    
+
 //   ];
+
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import { Link } from "react-router-dom";
+import { BsFillCartFill } from "react-icons/bs";
+import Button from "react-bootstrap/Button";
+import Row from "react-bootstrap/Row";
+import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
+
+const ethiopianNavBarPic=[]
+
+function Header() {
+  return (
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand href="#home">African</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+              <NavDropdown.Item
+                href="#action/3.4"
+                style={{ width: "60rem", height: "26rem" }}
+              >
+                <Row xs={1} md={3} className="g-4">
+                <Col>
+                      <Card style={{ width: "18rem", height: "10rem" }}>
+                        <Card.Img
+                          variant="top"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTU1tWHJeME40EldRdMGRicz4C0pcPu82Glw&usqp=CAU"
+                        />
+                        <Card.Body>
+                          <Card.Title>contry</Card.Title>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                    <Col>
+                      <Card style={{ width: "18rem", height: "10rem" }}>
+                        <Card.Img
+                          variant="top"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTU1tWHJeME40EldRdMGRicz4C0pcPu82Glw&usqp=CAU"
+                        />
+                        <Card.Body>
+                          <Card.Title>contry</Card.Title>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                    <Col>
+                      <Card style={{ width: "18rem", height: "10rem" }}>
+                        <Card.Img
+                          variant="top"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTU1tWHJeME40EldRdMGRicz4C0pcPu82Glw&usqp=CAU"
+                        />
+                        <Card.Body>
+                          <Card.Title>contry</Card.Title>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                </Row>
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="#Home">
+              <Link to="/">Home</Link>
+            </Nav.Link>
+            <Nav.Link href="#Sing in">
+              <Link to="Sing In">Sing In</Link>
+            </Nav.Link>
+            <Nav.Link href="#Sing in">
+              <Link to="Ethiopian Choice Page">Ethiopian Choice Page</Link>
+            </Nav.Link>
+          </Nav>
+          <Nav>
+            <Button>
+              <BsFillCartFill />
+            </Button>
+            <Nav.Link eventKey={2} href="#memes"></Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
+
+export default Header;
