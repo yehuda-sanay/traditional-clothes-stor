@@ -12,7 +12,7 @@ export default function AllCards({ethiopian}) {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
-        height="140"
+        height="400"
         image={pic}
         alt="book"
       />

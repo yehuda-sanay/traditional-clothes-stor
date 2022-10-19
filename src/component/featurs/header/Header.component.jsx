@@ -296,8 +296,8 @@ export default function Header(){
       <Button variant="contained"><Link to="/">Home</Link> </Button>
       <Button variant="contained"><Link to="Sing In">Sing In</Link> </Button>
       <Button variant="contained"><Link to="Join">Join</Link> </Button>
-      <Button variant="contained"><Link to="Ethiopian Women">Ethiopian Women</Link> </Button>
-      <Button variant="contained"><Link to="Ethiopian Men">Ethiopian Men</Link> </Button>
+      <Button variant="contained"><Link to="EthiopianWomen">Ethiopian Women</Link> </Button>
+      <Button variant="contained"><Link to="EthiopianMen">Ethiopian Men</Link> </Button>
     </Stack>
             <h1>Header</h1>
         </div>

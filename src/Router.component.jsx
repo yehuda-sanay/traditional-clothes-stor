@@ -1,5 +1,7 @@
 import {Route, Routes} from 'react-router-dom'
 import { Home,Join, EthiopianWomenPage, EthiopianMenPage, SingIn } from './component/pages'
+import EthiopianMenProvaider from './contexts/EthiopianMenProvaider'
+import EthiopianWomenPrivaider from './contexts/EthiopianWomenPrivaider'
 
 
 export default function Routing(){
@@ -7,8 +9,8 @@ export default function Routing(){
         <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='Join' element={<Join/>}/>
-            <Route path='Ethiopian Women' element={<EthiopianWomenPage/>}/>
-            <Route path='Ethiopian Men' element={<EthiopianMenPage/>}/>
+            <Route path='EthiopianWomen' element={<EthiopianWomenPrivaider><EthiopianWomenPage/></EthiopianWomenPrivaider>}/>
+            <Route path='EthiopianMen' element={<EthiopianMenProvaider><EthiopianMenPage/></EthiopianMenProvaider>}/>
             <Route path='Sing In' element={<SingIn/>}/>
         </Routes>
     )

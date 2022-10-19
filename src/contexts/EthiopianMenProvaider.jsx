@@ -4,6 +4,7 @@ import getEhtiopianMenApi from "../servies/EthiopianMenApi"
 export const ethiopianMenContext= createContext()
 
 export default function EthiopianMenProvaider({children}){
+
     const [ethiopianMen, setEthiopianMen]=useState([]);
     useEffect(()=>{
         getEhtiopianMenApi().then(res=>setEthiopianMen(res))

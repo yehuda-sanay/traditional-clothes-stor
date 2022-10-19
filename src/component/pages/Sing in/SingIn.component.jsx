@@ -9,9 +9,9 @@ import {UsersContext} from '../../../contexts/UserProvaider'
 import { useContext } from "react";
 
 export default function SingIn() {
-  console.log(UsersContext);
-  const {users,setUsers}=useContext(UsersContext)
-  console.log("sum")
+  // console.log(UsersContext);
+  // const {users,setUsers}=useContext(UsersContext)
+  // console.log("sum")
   
 
   
