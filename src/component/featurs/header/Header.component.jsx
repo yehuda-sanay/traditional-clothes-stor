@@ -336,8 +336,6 @@ import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 
-const ethiopianNavBarPic=[]
-
 function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -352,17 +350,22 @@ function Header() {
                 style={{ width: "60rem", height: "26rem" }}
               >
                 <Row xs={1} md={3} className="g-4">
+                <Nav.Link href="#Sing in">
+              <Link to="Ethiopian Choice Page">
+
                 <Col>
                       <Card style={{ width: "18rem", height: "10rem" }}>
                         <Card.Img
                           variant="top"
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTU1tWHJeME40EldRdMGRicz4C0pcPu82Glw&usqp=CAU"
+                          src="https://i.pinimg.com/736x/39/0c/d1/390cd1b214e76a28ecb2e6d69cca1bdf.jpg"
                         />
                         <Card.Body>
-                          <Card.Title>contry</Card.Title>
+                          <Card.Title>Ethiopia</Card.Title>
                         </Card.Body>
                       </Card>
                     </Col>
+              </Link>
+            </Nav.Link>
                     <Col>
                       <Card style={{ width: "18rem", height: "10rem" }}>
                         <Card.Img
@@ -393,6 +396,12 @@ function Header() {
             </Nav.Link>
             <Nav.Link href="#Sing in">
               <Link to="Sing In">Sing In</Link>
+            </Nav.Link>
+            <Nav.Link href="#EthiopianMen">
+              <Link to="EthiopianMen">Ethiopian Men</Link>
+            </Nav.Link>
+            <Nav.Link href="#EthiopianWomen">
+              <Link to="EthiopianWomen">Ethiopian Women</Link>
             </Nav.Link>
             <Nav.Link href="#Sing in">
               <Link to="Ethiopian Choice Page">Ethiopian Choice Page</Link>

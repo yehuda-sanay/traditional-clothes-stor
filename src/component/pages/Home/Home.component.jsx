@@ -2,7 +2,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function Home() {
   return (
-    <Carousel style={{ width: '86rem',height:'31rem' }}>
+    <Carousel style={{ width: '100',height:'31rem' }}>
       <Carousel.Item interval={1000}>
         <img style={{ width: '15rem',height:'30rem' }}
           className="d-block w-100"

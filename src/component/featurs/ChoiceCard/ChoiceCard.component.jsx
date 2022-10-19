@@ -8,8 +8,8 @@ function ChoiceCard({item}) {
     
   return (
     <Col>
-    <Card style={{ width: '18rem',height:'18rem' }}>
-      <Card.Img style={{ width: '15rem',height:'18rem' }} variant="top" src={cathegoryImg} />
+    <Card style={{ width: '18rem',height:'18rem' }} >
+      <Card.Img style={{ width: '18rem',height:'18rem' }} variant="top" src={cathegoryImg} />
       <Card.Body>
         <Card.Title>{cathegory}</Card.Title>
         <Button variant="primary">
