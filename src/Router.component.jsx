@@ -1,5 +1,5 @@
 import {Route, Routes} from 'react-router-dom'
-import { Home,Join, EthiopianWomenPage, EthiopianMenPage, SingIn } from './component/pages'
+import { Home,Join, EthiopianWomenPage, EthiopianMenPage,SingIn } from './component/pages'
 import EthiopianMenProvaider from './contexts/EthiopianMenProvaider'
 import EthiopianWomenPrivaider from './contexts/EthiopianWomenPrivaider'
 import EthiopianChoicePage from './component/pages/EthiopianChoicePage/EthiopianChocePage.component'

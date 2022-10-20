@@ -331,6 +331,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 import { BsFillCartFill } from "react-icons/bs";
+import { BsDoorOpenFill } from "react-icons/bs";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
@@ -406,10 +407,22 @@ function Header() {
             <Nav.Link href="#Sing in">
               <Link to="Ethiopian Choice Page">Ethiopian Choice Page</Link>
             </Nav.Link>
+            <Nav.Link href="#Join">
+              <Link to="Join">Join</Link>
+            </Nav.Link>
+            <Nav.Link href="#Sing In">
+              <Link to="Sing In">Sing In</Link>
+            </Nav.Link>
           </Nav>
           <Nav>
             <Button>
               <BsFillCartFill />
+            </Button>
+            <Nav.Link eventKey={2} href="#memes"></Nav.Link>
+          </Nav>
+          <Nav>
+            <Button>
+              <BsDoorOpenFill />
             </Button>
             <Nav.Link eventKey={2} href="#memes"></Nav.Link>
           </Nav>
