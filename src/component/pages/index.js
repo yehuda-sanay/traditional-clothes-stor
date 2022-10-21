@@ -5,6 +5,8 @@ import EthiopianMenPage from "./EthiopianMenPage/EthiopianMenPage.component";
 import SingIn from "./SingIn/SingIn.component";
 import EthiopianGirlPage from "./EthiopianGirlPage/EthiopianGirlPage.component";
 import EthiopianBoyPage from "./EthiopianBoyPage/EthiopianBoyPage.component";
+import EthiopianCouplePage from "./EthiopianCouplePage/EthiopianCouplePage.component";
 
 
-export {Home, Join, EthiopianWomenPage, EthiopianMenPage, SingIn,EthiopianGirlPage,EthiopianBoyPage}
+
+export {Home, Join, EthiopianWomenPage, EthiopianMenPage, SingIn,EthiopianGirlPage,EthiopianBoyPage,EthiopianCouplePage}

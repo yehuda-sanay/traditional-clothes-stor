@@ -7,6 +7,7 @@ import FormLabel from '@mui/material/FormLabel';
 import Button from '@mui/material/Button';
 
 export default function SingIn() {
+
   return (
     <div className="singInClass">
     <Box

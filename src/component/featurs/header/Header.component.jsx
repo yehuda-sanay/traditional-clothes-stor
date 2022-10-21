@@ -407,6 +407,9 @@ function Header() {
             <Nav.Link href="#EthiopianBoy">
               <Link to="EthiopianBoy">Ethiopian Boy</Link>
             </Nav.Link>
+            <Nav.Link href="#EthiopianCouple">
+              <Link to="EthiopianCouple">Ethiopian Couple</Link>
+            </Nav.Link>
             <Nav.Link href="#Sing in">
               <Link to="Ethiopian Choice Page">Ethiopian Choice Page</Link>
             </Nav.Link>
