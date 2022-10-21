@@ -1,5 +1,5 @@
 import {createContext, useEffect, useState } from "react"
-import getEhtiopianGirlApi from "../servies/EthiopianMenApi"
+import getEhtiopianGirlApi from "../servies/EthiopianGirlApi"
 
 export const ethiopianGirlContext= createContext()
 

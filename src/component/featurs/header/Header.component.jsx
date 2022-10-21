@@ -395,14 +395,17 @@ function Header() {
             <Nav.Link href="#Home">
               <Link to="/">Home</Link>
             </Nav.Link>
-            <Nav.Link href="#Sing in">
-              <Link to="Sing In">Sing In</Link>
-            </Nav.Link>
             <Nav.Link href="#EthiopianMen">
               <Link to="EthiopianMen">Ethiopian Men</Link>
             </Nav.Link>
             <Nav.Link href="#EthiopianWomen">
               <Link to="EthiopianWomen">Ethiopian Women</Link>
+            </Nav.Link>
+            <Nav.Link href="#EthiopianGirl">
+              <Link to="EthiopianGirl">Ethiopian Girl</Link>
+            </Nav.Link>
+            <Nav.Link href="#EthiopianBoy">
+              <Link to="EthiopianBoy">Ethiopian Boy</Link>
             </Nav.Link>
             <Nav.Link href="#Sing in">
               <Link to="Ethiopian Choice Page">Ethiopian Choice Page</Link>
