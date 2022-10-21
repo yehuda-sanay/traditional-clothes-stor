@@ -7,7 +7,7 @@ const ETHIOPIAN_MEN="https://my-json-server.typicode.com/yehuda-sanay/ethiopian-
 // }
 export default function getEhtiopianMenApi(){
     try {
-        return  fetch("https://my-json-server.typicode.com/yehuda-sanay/ethiopian-clothing/men").then(res=>res.json())
+        return  fetch("ETHIOPIAN_MEN").then(res=>res.json())
         
     } catch (error) {
         console.log(error)
