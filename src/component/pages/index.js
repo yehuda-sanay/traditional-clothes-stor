@@ -9,7 +9,9 @@ import EthiopianCouplePage from "./EthiopianCouplePage/EthiopianCouplePage.compo
 import EthiopianAccessoriesPage from "./AccessoriesPage/EthiopianAccessoriesPage.component";
 import EthiopianJewelryPage from "./EthiopianJewelryPage/EthiopianJewelryPage.component";
 import JoinSingInPage from "./JoinSingInPage/JoinSingInPage.component";
+import CartPage from "./CartPage/CartPage.component";
 
 
 
-export {Home, Join, EthiopianWomenPage, EthiopianMenPage, SingIn,EthiopianGirlPage,EthiopianBoyPage,EthiopianCouplePage,EthiopianAccessoriesPage,EthiopianJewelryPage,JoinSingInPage}
+export {Home, Join, EthiopianWomenPage, EthiopianMenPage, SingIn,EthiopianGirlPage,EthiopianBoyPage,EthiopianCouplePage,EthiopianAccessoriesPage,EthiopianJewelryPage,
+    JoinSingInPage,CartPage}
