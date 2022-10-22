@@ -437,4 +437,3 @@ function Header() {
 }
 
 export default Header;
-{/* <Link to="JoinSingInPage"></Link> */}
