@@ -6,9 +6,9 @@ function ChoiceCard({item}) {
     const {links,cathegory,cathegoryImg} = item
     
   return (
-    <Col>
+    <Col className="mx-auto my-5">
             <Link to={links}>
-    <Card style={{ width: '18rem',height:'18rem' }} >
+    <Card style={{ width: '18rem',height:'18rem' }}>
       <Card.Img style={{ width: '18rem',height:'18rem' }} variant="top" src={cathegoryImg} />
       <Card.Body>
         <Card.Title>{cathegory}</Card.Title>

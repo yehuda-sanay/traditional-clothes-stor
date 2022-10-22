@@ -8,10 +8,10 @@ export default function EthiopianBoyPage(){
 
     const {ethiopianBoy}=useContext(ethiopianBoyContext)
     return(
-        <div>
-            <h1>ethiopianBoy</h1>
-            <Box sx={{ width: '100%' }}>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+        <div className="d-flex flex-column align-items-center">
+            <h1>Ethiopian Boys</h1>
+            <Box sx={{ width: '90%' }}>
+      <Grid container rowSpacing={4} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         {ethiopianBoy?.map((ethiopian)=>(<Grid item xs={3}><AllCards ethiopian={ethiopian}/></Grid>))}
           
       </Grid>

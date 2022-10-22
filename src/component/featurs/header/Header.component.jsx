@@ -329,7 +329,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { BsFillCartFill } from "react-icons/bs";
 import { BsDoorOpenFill } from "react-icons/bs";
 import Button from "react-bootstrap/Button";
@@ -338,8 +338,13 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 
 function Header() {
+  const signUpInPage= useNavigate()
+
+  const handleChange=()=>{
+    signUpInPage('/JoinSingInPage')
+  }
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
       <Container>
         <Navbar.Brand href="#home">African</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -395,39 +400,32 @@ function Header() {
             <Nav.Link href="#Home">
               <Link to="/">Home</Link>
             </Nav.Link>
-            <Nav.Link href="#EthiopianMen">
-              <Link to="EthiopianMen">Ethiopian Men</Link>
-            </Nav.Link>
-            <Nav.Link href="#EthiopianWomen">
-              <Link to="EthiopianWomen">Ethiopian Women</Link>
-            </Nav.Link>
-            <Nav.Link href="#EthiopianGirl">
-              <Link to="EthiopianGirl">Ethiopian Girl</Link>
-            </Nav.Link>
-            <Nav.Link href="#EthiopianBoy">
-              <Link to="EthiopianBoy">Ethiopian Boy</Link>
-            </Nav.Link>
-            <Nav.Link href="#EthiopianCouple">
-              <Link to="EthiopianCouple">Ethiopian Couple</Link>
-            </Nav.Link>
-            <Nav.Link href="#Sing in">
-              <Link to="Ethiopian Choice Page">Ethiopian Choice Page</Link>
-            </Nav.Link>
-            <Nav.Link href="#Join">
-              <Link to="Join">Join</Link>
-            </Nav.Link>
-            <Nav.Link href="#Sing In">
-              <Link to="Sing In">Sing In</Link>
-            </Nav.Link>
           </Nav>
           <Nav>
-            <Button>
-              <BsFillCartFill />
+            <Button 
+            style={{width:"3rem",height:"3rem", position:"relative"}}
+            variant="outline-primary"
+            className="rounded-circle"
+            >
+              <BsFillCartFill/>
+              <div
+              className="rounded-circle bg-danger d-flex justify-content-center align-items-center"
+              style={{color:"white",
+              width:"1.5rem",
+              height:"1.5rem",
+              position:"absolute",
+              bottom:0,
+              right:0,
+              transform:"translate(25%, 25%)"
+            }}
+              >3</div>
             </Button>
             <Nav.Link eventKey={2} href="#memes"></Nav.Link>
           </Nav>
           <Nav>
-            <Button>
+            <Button style={{width:"3rem",height:"3rem", position:"relative"}}
+            variant="outline-primary"
+            className="rounded-circle" onClick={handleChange}>
               <BsDoorOpenFill />
             </Button>
             <Nav.Link eventKey={2} href="#memes"></Nav.Link>
@@ -439,3 +437,4 @@ function Header() {
 }
 
 export default Header;
+{/* <Link to="JoinSingInPage"></Link> */}

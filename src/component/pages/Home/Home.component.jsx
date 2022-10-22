@@ -1,7 +1,9 @@
 import Carousel from 'react-bootstrap/Carousel';
+import JoinSingInPage from '../JoinSingInPage/JoinSingInPage.component';
 
 function Home() {
   return (
+    <div>
     <Carousel style={{ width: '100',height:'31rem' }}>
       <Carousel.Item interval={1000}>
         <img style={{ width: '15rem',height:'30rem' }}
@@ -39,6 +41,7 @@ function Home() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+  </div>
   );
 }
 
