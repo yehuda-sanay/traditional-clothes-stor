@@ -1,6 +1,7 @@
-import ItemCard from "../../featurs/CartCard/CartCard.component"
+
 import { ethiopianBoyContext } from "../../../contexts/EthiopianBoyProvaider.component"
 import { useContext } from "react";
+import AllCards from "../../featurs/Card/AllCards.component";
 
 
 export default function CartPage(){
@@ -12,7 +13,7 @@ export default function CartPage(){
             <div className="row justify-content-center">
               {ethiopianBoy?.map((ethiopian,index)=>{
                 return(
-                  <ItemCard ethiopian={ethiopian} item={index}/>
+                  <AllCards ethiopian={ethiopian} item={index}/>
 
                 )
               })}

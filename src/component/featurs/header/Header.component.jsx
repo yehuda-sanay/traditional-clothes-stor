@@ -336,9 +336,17 @@ import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
+import { useShoppingCart } from "../../../contexts/ShoppingCartContext";
+import Form from 'react-bootstrap/Form';
 
 function Header() {
+  const { openCart, cartQuantity } = useShoppingCart()
   const signUpInPage= useNavigate()
+  // const cartPage= useNavigate()
+
+  // const handleChangeCartPage=()=>{
+  //   signUpInPage('/cartPage')
+  // }
 
   const handleChange=()=>{
     signUpInPage('/JoinSingInPage')
@@ -350,7 +358,7 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+            <NavDropdown title="Traditional clothes" id="collasible-nav-dropdown">
               <NavDropdown.Item
                 href="#action/3.4"
                 style={{ width: "60rem", height: "26rem" }}
@@ -362,6 +370,7 @@ function Header() {
                 <Col>
                       <Card style={{ width: "18rem", height: "10rem" }}>
                         <Card.Img
+                        style={{ width: "18rem", height: "25rem" }}
                           variant="top"
                           src="https://i.pinimg.com/736x/39/0c/d1/390cd1b214e76a28ecb2e6d69cca1bdf.jpg"
                         />
@@ -375,22 +384,24 @@ function Header() {
                     <Col>
                       <Card style={{ width: "18rem", height: "10rem" }}>
                         <Card.Img
+                        style={{ width: "18rem", height: "30rem" }}
                           variant="top"
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTU1tWHJeME40EldRdMGRicz4C0pcPu82Glw&usqp=CAU"
+                          src="https://sc04.alicdn.com/kf/HTB1iqrOXbsrBKNjSZFpq6AXhFXay.jpg"
                         />
                         <Card.Body>
-                          <Card.Title>contry</Card.Title>
+                          <Card.Title>China</Card.Title>
                         </Card.Body>
                       </Card>
                     </Col>
                     <Col>
                       <Card style={{ width: "18rem", height: "10rem" }}>
                         <Card.Img
+                        style={{ width: "18rem", height: "23rem" }}
                           variant="top"
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTU1tWHJeME40EldRdMGRicz4C0pcPu82Glw&usqp=CAU"
+                          src="https://cdn.shopify.com/s/files/1/1058/0630/products/L17Sep-292_500x.jpg?v=1664499191"
                         />
                         <Card.Body>
-                          <Card.Title>contry</Card.Title>
+                          <Card.Title>African</Card.Title>
                         </Card.Body>
                       </Card>
                     </Col>
@@ -401,8 +412,21 @@ function Header() {
               <Link to="/">Home</Link>
             </Nav.Link>
           </Nav>
+          <Form className="d-flex">
+            <Form.Control
+            style={{width:"15rem",height:"2.5rem"}}
+              type="search"
+              placeholder="Search color"
+              className="me-2"
+              aria-label="Search"
+            />
+            <Button variant="outline-success"
+            style={{width:"15rem",height:"2.5rem"}}
+            >Search</Button>
+          </Form>
           <Nav>
             <Button 
+            onClick={openCart}
             style={{width:"3rem",height:"3rem", position:"relative"}}
             variant="outline-primary"
             className="rounded-circle"
@@ -418,7 +442,7 @@ function Header() {
               right:0,
               transform:"translate(25%, 25%)"
             }}
-              >3</div>
+              >{cartQuantity}</div>
             </Button>
             <Nav.Link eventKey={2} href="#memes"></Nav.Link>
           </Nav>
@@ -437,3 +461,4 @@ function Header() {
 }
 
 export default Header;
+

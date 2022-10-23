@@ -1,20 +1,20 @@
 import { useContext } from "react"
 import { ethiopianJewelryContext } from "../../../contexts/EthiopianJewelryProvaider.component";
 import AllCards from "../../featurs/Card/AllCards.component"
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
+import { Col, Row } from "react-bootstrap"
 function EthiopianJewelryPage(){
     const {ethiopianJewelry}=useContext(ethiopianJewelryContext)
-    return(
-        <div className="d-flex flex-column align-items-center">
-            <h1>Ethiopian Jewelry</h1>
-            <Box sx={{ width: '90%' }}>
-      <Grid container rowSpacing={4} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        {ethiopianJewelry?.map((ethiopian)=>(<Grid item xs={3}><AllCards ethiopian={ethiopian}/></Grid>))}
-          
-      </Grid>
-    </Box>
-        </div>
+    return (
+      <>
+        <h1>Store</h1>
+        <Row md={2} xs={1} lg={3} className="g-3">
+          {ethiopianJewelry?.map(item => (
+            <Col key={item.id}>
+              <AllCards {...item} />
+            </Col>
+          ))}
+        </Row>
+      </>
     );
 }
 export default EthiopianJewelryPage;

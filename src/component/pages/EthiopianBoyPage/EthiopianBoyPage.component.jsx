@@ -1,14 +1,24 @@
 import { useContext } from "react";
 import { ethiopianBoyContext } from "../../../contexts/EthiopianBoyProvaider.component";
 import AllCards from "../../featurs/Card/AllCards.component";
-import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
+import { Col, Row } from "react-bootstrap"
 
 export default function EthiopianBoyPage() {
   const { ethiopianBoy } = useContext(ethiopianBoyContext);
   return (
-    <div>
-      <h1>ethiopianBoy</h1>
+    <>
+      <h1>Store</h1>
+      <Row md={2} xs={1} lg={3} className="g-3">
+        {ethiopianBoy?.map(item => (
+          <Col key={item.id}>
+            <AllCards {...item} />
+          </Col>
+        ))}
+      </Row>
+    </>
+  );
+}
+{/* <h1>ethiopianBoy</h1>
       <Box sx={{ width: "100%" }}>
         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
           {ethiopianBoy?.map((ethiopian, index) => (
@@ -17,7 +27,4 @@ export default function EthiopianBoyPage() {
             </Grid>
           ))}
         </Grid>
-      </Box>
-    </div>
-  );
-}
+      </Box> */}

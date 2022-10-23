@@ -21,6 +21,7 @@
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
     "react-use-cart": "^1.13.0",
+    "uselocalstorage-react-hook": "^1.0.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

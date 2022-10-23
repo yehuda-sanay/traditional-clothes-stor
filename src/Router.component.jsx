@@ -1,25 +1,20 @@
 import {Route, Routes} from 'react-router-dom'
 import { Home,Join, EthiopianWomenPage, EthiopianMenPage,SingIn,EthiopianGirlPage,EthiopianBoyPage,EthiopianCouplePage,EthiopianAccessoriesPage,EthiopianJewelryPage,JoinSingInPage,CartPage } from './component/pages'
+import EthiopianChoicePage from './component/pages/EthiopianChoicePage/EthiopianChocePage.component'
 import EthiopianMenProvaider from './contexts/EthiopianMenProvaider'
 import EthiopianWomenPrivaider from './contexts/EthiopianWomenPrivaider'
-import EthiopianChoicePage from './component/pages/EthiopianChoicePage/EthiopianChocePage.component'
 import EthiopianGirlProvaider from './contexts/EthiopianGirlProvaider.component'
 import EthiopianBoyProvaider from './contexts/EthiopianBoyProvaider.component'
 import EthiopianCoupleProvaider from './contexts/EthiopianCoupleProvaider.component'
 import EthiopianAccessoriesProvaider from './contexts/EthiopianAccessoriesProvaider.component'
 import EthiopianJewelryProvaider from './contexts/EthiopianJewelryProvaider.component'
-import {CartProvider} from 'react-use-cart'
+// import {CartProvider} from 'react-use-cart'
+// import { ShoppingCartProvider } from './contexts/ShoppingCartContext'
 
 export default function Routing(){
     return(
-            <CartProvider>
-                <EthiopianWomenPrivaider>
-                <EthiopianMenProvaider>
-                <EthiopianGirlProvaider>
-                <EthiopianBoyProvaider>
-                <EthiopianCoupleProvaider>
-                <EthiopianAccessoriesProvaider>
-                <EthiopianJewelryProvaider>
+            // <CartProvider>
+            
         <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='Join' element={<Join/>}/>
@@ -31,17 +26,12 @@ export default function Routing(){
             <Route path='EthiopianAccessories' element={<EthiopianAccessoriesPage/>}/>
             <Route path='EthiopianJewelry' element={<EthiopianJewelryPage/>}/>
             <Route path='JoinSingInPage' element={<JoinSingInPage/>}/>
-            <Route path='CartPage' element={<CartPage/>}/>
+            <Route path='cartPage' element={<CartPage/>}/>
             <Route path='Sing In' element={<SingIn/>}/>
             <Route path='Ethiopian Choice Page' element={<EthiopianChoicePage/>}/>
         </Routes>
-        </EthiopianJewelryProvaider>
-        </EthiopianAccessoriesProvaider>
-        </EthiopianCoupleProvaider>
-        </EthiopianBoyProvaider>
-        </EthiopianGirlProvaider>
-        </EthiopianMenProvaider>
-        </EthiopianWomenPrivaider>
-            </CartProvider>
+        
+        
+            // </CartProvider>
     )
 }
