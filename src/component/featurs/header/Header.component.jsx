@@ -358,7 +358,7 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <NavDropdown title="Traditional clothes" id="collasible-nav-dropdown">
+            <NavDropdown title="Your World" id="collasible-nav-dropdown">
               <NavDropdown.Item
                 href="#action/3.4"
                 style={{ width: "60rem", height: "26rem" }}
@@ -389,7 +389,7 @@ function Header() {
                           src="https://sc04.alicdn.com/kf/HTB1iqrOXbsrBKNjSZFpq6AXhFXay.jpg"
                         />
                         <Card.Body>
-                          <Card.Title>China</Card.Title>
+                          <Card.Title>Chaina</Card.Title>
                         </Card.Body>
                       </Card>
                     </Col>
@@ -418,7 +418,7 @@ function Header() {
               <Link to="AboutUsPage">About Us</Link>
             </Nav.Link>
           </Nav>
-          <Form className="d-flex">
+          {/* <Form className="d-flex">
             <Form.Control
             // onChange={onChange}
             style={{width:"15rem",height:"2.5rem"}}
@@ -430,7 +430,7 @@ function Header() {
             <Button className="me-3" variant="outline-success"
             style={{width:"15rem",height:"2.5rem"}}
             >Search</Button>
-          </Form>
+          </Form> */}
           <Nav>
             <Button 
             onClick={openCart}
