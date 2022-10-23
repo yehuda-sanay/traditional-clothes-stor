@@ -10,8 +10,10 @@ import EthiopianAccessoriesPage from "./AccessoriesPage/EthiopianAccessoriesPage
 import EthiopianJewelryPage from "./EthiopianJewelryPage/EthiopianJewelryPage.component";
 import JoinSingInPage from "./JoinSingInPage/JoinSingInPage.component";
 import CartPage from "./CartPage/CartPage.component";
+import StateTextFields from "./contactPage/contactPage";
+import AboutUsPage from "./aboutUs/AboutUsPage";
 
 
 
 export {Home, Join, EthiopianWomenPage, EthiopianMenPage, SingIn,EthiopianGirlPage,EthiopianBoyPage,EthiopianCouplePage,EthiopianAccessoriesPage,EthiopianJewelryPage,
-    JoinSingInPage,CartPage}
+    JoinSingInPage,CartPage,StateTextFields,AboutUsPage}

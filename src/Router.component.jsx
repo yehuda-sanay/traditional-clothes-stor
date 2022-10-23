@@ -1,5 +1,6 @@
 import {Route, Routes} from 'react-router-dom'
-import { Home,Join, EthiopianWomenPage, EthiopianMenPage,SingIn,EthiopianGirlPage,EthiopianBoyPage,EthiopianCouplePage,EthiopianAccessoriesPage,EthiopianJewelryPage,JoinSingInPage,CartPage } from './component/pages'
+import { Home,Join, EthiopianWomenPage, EthiopianMenPage,SingIn,EthiopianGirlPage,EthiopianBoyPage,EthiopianCouplePage,EthiopianAccessoriesPage,EthiopianJewelryPage,
+    JoinSingInPage,CartPage,StateTextFields,AboutUsPage } from './component/pages'
 import EthiopianChoicePage from './component/pages/EthiopianChoicePage/EthiopianChocePage.component'
 
 
@@ -21,7 +22,9 @@ export default function Routing(){
             <Route path='JoinSingInPage' element={<JoinSingInPage/>}/>
             <Route path='cartPage' element={<CartPage/>}/>
             <Route path='Sing In' element={<SingIn/>}/>
+            <Route path='StateTextFields' element={<StateTextFields/>}/>
             <Route path='Ethiopian Choice Page' element={<EthiopianChoicePage/>}/>
+            <Route path='AboutUsPage' element={<AboutUsPage/>}/>
         </Routes>
         
         

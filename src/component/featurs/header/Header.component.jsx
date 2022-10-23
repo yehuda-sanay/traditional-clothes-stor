@@ -411,6 +411,12 @@ function Header() {
             <Nav.Link href="#Home">
               <Link to="/">Home</Link>
             </Nav.Link>
+            <Nav.Link href="#StateTextFields">
+              <Link to="StateTextFields">Contact Us</Link>
+            </Nav.Link>
+            <Nav.Link href="#AboutUsPage">
+              <Link to="AboutUsPage">About Us</Link>
+            </Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
