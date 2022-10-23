@@ -420,7 +420,7 @@ function Header() {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success"
+            <Button className="me-3" variant="outline-success"
             style={{width:"15rem",height:"2.5rem"}}
             >Search</Button>
           </Form>
