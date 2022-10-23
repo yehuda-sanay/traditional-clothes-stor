@@ -414,6 +414,7 @@ function Header() {
           </Nav>
           <Form className="d-flex">
             <Form.Control
+            onChange={onChange}
             style={{width:"15rem",height:"2.5rem"}}
               type="search"
               placeholder="Search color"
