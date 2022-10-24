@@ -4,12 +4,14 @@ import usersApi from '../servies/UsersApi';
 export const UsersContext=createContext();
 
 export default function UserProvaider({children}){
-    console.log(usersApi)
+    // console.log(usersApi)
     const [users, setUsers]=useState([]);
+    const [isLogin, setisLogin]=useState(false);
+
     useEffect(()=>{usersApi().then(res=>res.json()).then(respons=>setUsers(respons))},[])
-    console.log(users);
+    
     return(
-        <UsersContext.Provider>
+        <UsersContext.Provider value={{users,setUsers,isLogin,setisLogin}}>
         {children}
         </UsersContext.Provider>
 

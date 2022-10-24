@@ -12,11 +12,15 @@ import EthiopianBoyProvaider from './contexts/EthiopianBoyProvaider.component'
 import EthiopianCoupleProvaider from './contexts/EthiopianCoupleProvaider.component'
 import EthiopianAccessoriesProvaider from './contexts/EthiopianAccessoriesProvaider.component'
 import EthiopianJewelryProvaider from './contexts/EthiopianJewelryProvaider.component'
+import UserProvaider from './contexts/UserProvaider';
+import FilterProvaider from './contexts/FilterProvider';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <FilterProvaider>
+      <UserProvaider>
       <EthiopianWomenPrivaider>
                 <EthiopianMenProvaider>
                 <EthiopianGirlProvaider>
@@ -37,6 +41,8 @@ function App() {
         </EthiopianGirlProvaider>
         </EthiopianMenProvaider>
         </EthiopianWomenPrivaider>
+        </UserProvaider>
+        </FilterProvaider>
       </BrowserRouter>
     </div>
   );

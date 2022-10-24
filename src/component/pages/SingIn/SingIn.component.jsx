@@ -51,6 +51,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Link from '@mui/material/Link';
 
 const SingIn=()=>{
+    
     const sxStyle= { my: 3 }
     const paperStyle={padding :20,height:'70vh',width:300, margin:"20px auto"}
     const avatarStyle={backgroundColor:'#1bbd7e'}

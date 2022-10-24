@@ -4,13 +4,13 @@ import {createContext, useEffect, useState } from "react"
 export const filterContext= createContext()
 
 export default function FilterProvaider({children}){
-
+    const [user,setUser]=useState(false)
     const [filteritem, setFilteritem]=useState([]);
     
 
     return(
-        <ethiopianCoupleContext.Provider value={{filteritem, setFilteritem}}>
+        <filterContext.Provider value={{filteritem, setFilteritem,user,setUser}}>
             {children}
-        </ethiopianCoupleContext.Provider>
+        </filterContext.Provider>
     )
 }

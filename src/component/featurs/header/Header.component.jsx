@@ -347,6 +347,7 @@ function Header() {
   // const handleChangeCartPage=()=>{
   //   signUpInPage('/cartPage')
   // }
+  
 
   const handleChange=()=>{
     signUpInPage('/JoinSingInPage')
